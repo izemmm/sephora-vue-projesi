@@ -1,5 +1,5 @@
 <script setup>
-// Buraya Javascript kodları gelecek
+
 </script>
 
 <template>
@@ -10,7 +10,7 @@
 </template>
 
 <style scoped>
-/* Buraya CSS kodları gelecek */
+
 h2 {
   color: blue;
 }

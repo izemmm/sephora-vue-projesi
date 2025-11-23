@@ -1,8 +1,8 @@
 <script setup>
 import { shallowRef } from 'vue'
 
-// 1. ELİNDEKİ TÜM BİLEŞENLERİ BURAYA ÇAĞIRIYORUZ
-// (Dosya isimlerin TheHeader ve TheFooter olarak güncellediğini varsayıyorum)
+//TÜM BİLEŞENLERİ BURAYA ÇAĞIRIYORUM
+
 import ProductDetail from './components/organisms/ProductDetail.vue'
 import CartPage from './components/organisms/CartPage.vue'
 import RegisterForm from './components/organisms/RegisterForm.vue'
@@ -16,8 +16,7 @@ import CampaignGrid from './components/organisms/CampaignGrid.vue'
 import AddToCartModal from './components/organisms/AddToCartModal.vue'
 import MainNavigation from './components/molecules/MainNavigation.vue'
 
-// Eğer Slider dosyasını oluşturduysan aşağıdaki yorumu kaldırabilirsin:
-// import HeroSlider from './components/organisms/HeroSlider.vue'
+
 
 // 2. SOL MENÜDE GÖZÜKECEK LİSTE
 const componentList = [
@@ -33,14 +32,14 @@ const componentList = [
 
 { name: 'Giriş Yap Formu (Organism)', component: LoginForm },
 { name: 'Üyelik Formu (Organism)', component: RegisterForm },
-  // { name: 'Slider (Organism)', component: HeroSlider }, // Slider yapınca bunu açarsın
+ 
 ]
 
-// 3. BAŞLANGIÇTA HANGİSİ GÖZÜKSÜN? (İlk sıradaki)
+// BAŞLANGIÇTA HANGİSİ GÖZÜKSÜNONU AYARLADIM İlk sıradaki gözükücek
 const currentComponent = shallowRef(componentList[0].component)
 const currentName = shallowRef(componentList[0].name)
 
-// 4. TIKLAYINCA DEĞİŞTİREN FONKSİYON
+//  TIKLAYINCA DEĞİŞTİREN FONKSİYON
 function selectComponent(item) {
   currentComponent.value = item.component
   currentName.value = item.name
@@ -91,10 +90,10 @@ body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; overflow: hid
   width: 100vw;
 }
 
-/* --- SOL MENÜ TASARIMI --- */
+/*  SOL MENÜ TASARIMI */
 .sidebar {
   width: 260px;
-  background-color: #212529; /* Koyu gri */
+  background-color: #212529; 
   color: white;
   display: flex;
   flex-direction: column;
@@ -130,19 +129,19 @@ body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; overflow: hid
 .sidebar button:hover {
   background-color: #343a40;
   color: white;
-  padding-left: 25px; /* Hover olunca hafif sağa kaysın */
+  padding-left: 25px; /* Hover olunca hafif sağa kayıcak */
 }
 
 .sidebar button.active {
-  background-color: #d1245e; /* Sephora pembesi */
+  background-color: #d1245e; 
   color: white;
   font-weight: bold;
 }
 
-/* --- SAĞ TARAF TASARIMI --- */
+/* SAĞ TARAF TASARIMI */
 .preview-area {
   flex: 1;
-  background-color: #e9ecef; /* Açık gri arka plan */
+  background-color: #e9ecef; 
   display: flex;
   flex-direction: column;
 }
@@ -158,8 +157,8 @@ body { margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; overflow: hid
 .component-wrapper {
   flex: 1;
   padding: 20px;
-  overflow-y: auto; /* Bileşen büyükse kaydırma çubuğu çıksın */
-  background-color: white; /* Bileşenlerin zemini beyaz olsun */
+  overflow-y: auto; /* Bileşen büyükse kaydırma çubuğu çıkıcak*/
+  background-color: white; 
   margin: 20px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
