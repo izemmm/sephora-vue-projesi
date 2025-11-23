@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-// --- RESİMLERİ IMPORT EDİYORUZ ---
+
 import img1 from '@/assets/modal-1.png'
 import img2 from '@/assets/modal-2.png'
 import img3 from '@/assets/modal-3.png'
@@ -185,10 +185,10 @@ const products = [
   display: flex;
   gap: 20px;
   position: relative;
-  align-items: flex-start; /* Hizalamayı düzelttik */
+  align-items: flex-start; /* Hizalama */
 }
 
-/* --- ÜRÜN KARTI EFEKTLERİ (YENİ) --- */
+/* ürün kartı efektleri */
 .rec-card {
   width: 33%;
   position: relative;
@@ -200,19 +200,19 @@ const products = [
 
 /* Mouse üzerine gelince */
 .rec-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Hafif gölge */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
 }
 
 /* Tıklayınca (Basma Hissi) */
 .rec-card:active {
-  transform: scale(0.96); /* %4 Küçülür */
-  background-color: #f9f9f9; /* Arka plan hafif grileşir */
+  transform: scale(0.96); 
+  background-color: #f9f9f9; 
 }
-/* ---------------------------------- */
+
 
 .badge {
   position: absolute;
-  top: 10px; /* Padding eklediğimiz için konumu biraz içeri aldık */
+  top: 10px; /* Padding eklediğimiz için konumu biraz içeri aldım */
   left: 10px;
   background-color: #d1245e; 
   color: white;
@@ -245,7 +245,7 @@ const products = [
 .price-area { font-size: 14px; font-weight: 900; }
 .start-label { font-weight: 400; font-size: 13px; }
 
-/* SAĞ OK BUTONU EFEKTLERİ */
+/* sağ ok butonu efektlerim */
 .next-arrow {
   position: absolute;
   right: -15px;

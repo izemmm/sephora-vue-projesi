@@ -1,18 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 
-// --- 1. RESİMLERİN ---
+
 import anaResim from '@/assets/ana.png'
 import resim1 from '@/assets/ana1.png'
 import resim2 from '@/assets/ana2.png'
 
-// --- 2. DURUM YÖNETİMİ ---
+// DURUM YÖNETİMİ 
 const selectedColorId = ref(2) 
 const isColorModalOpen = ref(false)
 const isFavorite = ref(false)
 const isDescriptionExpanded = ref(false)
 
-// --- 3. RENK LİSTESİ ---
+// RENK LİSTESİ 
 const colors = [
   { id: 1, name: '93 Restless Rosé (6 g)', hex: '#ff9eb5', price: '2.900 TL', inStock: true },
   { id: 2, name: '06 Rose Haze (5 g)', hex: '#edaea0', price: '2.900 TL', inStock: true },
@@ -26,7 +26,7 @@ const colors = [
   { id: 10, name: '22 Fuchsia', hex: '#ff80ab', price: '2.900 TL', inStock: true },
 ]
 
-// --- 4. FONKSİYONLAR ---
+// FONKSİYONLAR 
 
 const currentVariantName = () => {
   const color = colors.find(c => c.id === selectedColorId.value)
@@ -189,7 +189,7 @@ const changeMainImage = (clickedImage) => {
 
   </div>
 </template>
-
+//Güvenli Ödeme İkonları ve Renk Seçim Modalı
 <style scoped>
 .product-page { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #000; padding: 20px; background-color: white; }
 .breadcrumb { font-size: 12px; color: #666; margin-bottom: 20px; }
@@ -222,7 +222,7 @@ const changeMainImage = (clickedImage) => {
 .swatch-wrapper.active { border: 1px solid #000; }
 .swatch { width: 100%; height: 100%; border-radius: 50%; border: 1px solid #eee; }
 
-/* --- SEPETE EKLE BUTONU (GÜNCELLENDİ) --- */
+/* sepete ekle butonum */
 .add-to-cart-btn { 
   background-color: #000; 
   color: #fff; 
@@ -232,16 +232,16 @@ const changeMainImage = (clickedImage) => {
   font-size: 16px; 
   font-weight: 700; 
   cursor: pointer; 
-  transition: all 0.1s ease; /* Geçiş hızını 0.1s yaptım daha seri olsun */
+  transition: all 0.1s ease; 
   border-radius: 4px; 
 }
 
-/* Tıklama / Basma Efekti */
+/* Basma Efekti */
 .add-to-cart-btn:active {
-  transform: scale(0.97); /* %3 küçülür */
-  background-color: #333; /* Rengi hafif açılır */
+  transform: scale(0.97); 
+  background-color: #333; 
 }
-/* ---------------------------------------- */
+
 
 .trust-badges { margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 20px; }
 .card-icons { display: flex; gap: 5px; }

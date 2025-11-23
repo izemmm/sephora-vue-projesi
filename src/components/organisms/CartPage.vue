@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-// Daha önce yüklediğin ana görseli burada da kullanıyoruz
+
 import productImg from '@/assets/ana.png'
 
 const quantity = ref(1)
@@ -128,7 +128,7 @@ const quantity = ref(1)
 /* Genel Sayfa Ayarları */
 .checkout-page {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f6f6f6; /* Sayfanın gri arka planı */
+  background-color: #f6f6f6; 
   min-height: 100vh;
 }
 
@@ -179,7 +179,7 @@ const quantity = ref(1)
 .step-num {
   width: 24px;
   height: 24px;
-  background-color: #d1245e; /* Kırmızı/Pembe aktif renk */
+  background-color: #d1245e; 
   color: white;
   border-radius: 50%;
   display: flex;
@@ -210,7 +210,7 @@ const quantity = ref(1)
 
 /* Sol Sütun */
 .left-col {
-  flex: 2; /* Sol taraf daha geniş */
+  flex: 2; /* Sol taraf daha geniş olucak */
 }
 
 .cart-box {
@@ -268,7 +268,7 @@ const quantity = ref(1)
   background: white;
 }
 
-/* --- KALDIR BUTONU EFEKTLERİ (YENİ) --- */
+/* kaldır butonu efektlerim */
 .remove-btn {
   background: none;
   border: none;
@@ -276,19 +276,19 @@ const quantity = ref(1)
   font-weight: bold;
   cursor: pointer;
   text-decoration: underline;
-  transition: all 0.1s ease; /* Animasyon */
+  transition: all 0.1s ease; 
 }
 
 .remove-btn:hover {
-  color: #d1245e; /* Üzerine gelince pembe */
+  color: #d1245e; 
   text-decoration: none;
 }
 
 .remove-btn:active {
-  transform: scale(0.90); /* Tıklayınca küçülme */
+  transform: scale(0.90); 
   color: #999;
 }
-/* ------------------------------------- */
+
 
 .item-price {
   font-weight: 700;
@@ -297,13 +297,13 @@ const quantity = ref(1)
 
 /* Sağ Sütun */
 .right-col {
-  flex: 1; /* Sağ taraf daha dar */
+  flex: 1; /* Sağ taraf daha dar olsun diye*/
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Promo ve Özet Kutuları Ortak Stil */
+/* Promo ve Özet Kutuları Ortak Stili */
 .promo-box, .summary-box {
   background-color: white;
   padding: 20px;
@@ -385,7 +385,7 @@ const quantity = ref(1)
 }
 
 .progress-fill {
-  width: 100%; /* Full dolu */
+  width: 100%; 
   height: 100%;
   background-color: black;
   border-radius: 3px;
@@ -412,7 +412,7 @@ const quantity = ref(1)
   margin-bottom: 20px;
 }
 
-/* ALIŞVERİŞİ TAMAMLA BUTONU EFEKTLERİ (YENİ) */
+/* alışverişi tamamla butonumun efektleri */
 .checkout-btn {
   width: 100%;
   background-color: black;
@@ -430,6 +430,6 @@ const quantity = ref(1)
 }
 
 .checkout-btn:active {
-  transform: scale(0.98); /* Hafif küçülme */
+  transform: scale(0.98); 
 }
 </style>

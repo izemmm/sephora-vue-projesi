@@ -21,16 +21,16 @@ const links = [
 <style scoped>
 .main-nav {
   border-top: 1px solid #eee;
-  padding: 18px 0; /* Yüksekliği biraz artırdım, ferah olsun */
+  padding: 18px 0; /* Yükseklik*/
   background-color: white;
 }
 
 ul {
   display: flex;
-  justify-content: center; /* Tam ortalar */
+  justify-content: center; 
   align-items: center;
   list-style: none;
-  gap: 35px; /* BOŞLUK ARTIRILDI: Yazılar birbirine yapışmaz */
+  gap: 35px; /* boşluk */
   margin: 0;
   padding: 0;
   flex-wrap: wrap; /* Ekran küçülürse taşmasın */
@@ -45,21 +45,21 @@ a {
   text-decoration: none;
   color: #000;
   font-weight: 750; /* Kalınlık (Görseldeki gibi bold) */
-  font-size: 12px; /* BOYUT KÜÇÜLTÜLDÜ: Daha zarif durur */
+  font-size: 12px; 
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.5px; /* Harfler arası çok hafif boşluk */
+  letter-spacing: 0.5px; 
   
-  /* --- BASMA EFEKTİ AYARLARI --- */
+  /* BASMA EFEKTİ AYARLARI*/
   display: inline-block;
   transition: transform 0.1s ease, color 0.2s;
 }
 
-/* Sadece ilk yazı (Sephora Collection) pembe */
+/* Sadece ilk yazı pembe */
 .pink-text {
   color: #d1245e !important;
 }
 
-/* --- EFEKTLER --- */
+/* efektlerim */
 
 /* Mouse üzerine gelince */
 a:hover {
@@ -70,9 +70,9 @@ a:hover {
   color: #a01540 !important;
 }
 
-/* Tıklayınca (Basma Hissi) */
+/* Tıklayınca  */
 a:active {
-  transform: scale(0.92); /* Hafifçe küçülür */
+  transform: scale(0.92); /*  küçülme */
   color: #999;
 }
 </style>

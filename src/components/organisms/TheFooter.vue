@@ -1,5 +1,5 @@
 <script setup>
-// Linkleri dizi (array) olarak tutuyoruz, böylece HTML çok karışmıyor
+// Linkleri dizi olarak tutuyorum, böylece HTML çok karışmıyor
 const aboutLinks = [
   'Mağazalar', 'Profil Bilgilerim', 'Siparişlerim', 'Sephora Kart', 
   'Kampanyalar', 'Sephora Blog', 'Sıkça Sorulan Sorular', 'Sitemap', 'Bize Ulaşın'
@@ -159,7 +159,7 @@ a:hover {
 .right-col {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Sağa yasla */
+  align-items: flex-end; /* Sağa yaslama */
 }
 
 .social-content {
@@ -213,7 +213,7 @@ a:hover {
 /* Alt Bar (Türkiye ve Buton) */
 .footer-bottom {
   display: flex;
-  justify-content: flex-end; /* Sağa yasla */
+  justify-content: flex-end; /* Sağa yaslama */
   align-items: center;
   padding-top: 20px;
   position: relative;

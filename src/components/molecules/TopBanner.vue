@@ -9,7 +9,7 @@
 
 <style scoped>
 .top-banner {
-  background-color: #feeef3; /* Sephora pembesine yakın bir renk */
+  background-color: #feeef3; 
   text-align: center;
   padding: 10px 0;
   font-family: 'Arial', sans-serif;

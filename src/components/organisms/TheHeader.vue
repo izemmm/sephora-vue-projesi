@@ -70,7 +70,7 @@ import MainNavigation from '../molecules/MainNavigation.vue';
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   cursor: pointer;
-  transition: transform 0.1s ease; /* Geçiş efekti */
+  transition: transform 0.1s ease; 
 }
 
 /* Logo Basma Efekti */
@@ -122,19 +122,19 @@ import MainNavigation from '../molecules/MainNavigation.vue';
   gap: 8px;
   cursor: pointer;
   white-space: nowrap;
-  transition: transform 0.1s ease, color 0.2s; /* Geçiş efektleri */
+  transition: transform 0.1s ease, color 0.2s; 
 }
 
 /* Action Item Hover & Active */
 .action-item:hover {
-  color: #555; /* Üzerine gelince hafif grileşsin */
+  color: #555; 
 }
 .action-item:active {
-  transform: scale(0.95); /* Tıklayınca küçülsün */
+  transform: scale(0.95); 
   color: #000;
 }
 
-/* İkon + Badge Sarmalayıcısı */
+/* İkon + Badge */
 .icon-wrapper {
   position: relative;
   cursor: pointer;
@@ -148,7 +148,7 @@ import MainNavigation from '../molecules/MainNavigation.vue';
   transform: scale(0.90);
 }
 
-/* Bildirim Rozeti */
+/* Bildirim  */
 .badge {
   position: absolute;
   top: -6px;

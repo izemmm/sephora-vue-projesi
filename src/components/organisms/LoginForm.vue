@@ -4,14 +4,14 @@ import { ref } from 'vue'
 const email = ref('')
 const hasError = ref(false)
 
-// Butona basılınca çalışacak fonksiyon
+// Butona basılınca çalışacak fonksiyonum
 const handleSubmit = () => {
-  // Eğer email boşsa hata ver
+  // Eğer email boşsa hata veriyo
   if (!email.value || email.value.trim() === '') {
     hasError.value = true
   } else {
     hasError.value = false
-    alert(`Giriş yapılıyor: ${email.value}`) // Şimdilik alert verelim
+    alert(`Giriş yapılıyor: ${email.value}`) 
   }
 }
 </script>
@@ -75,7 +75,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input ve Buton Yan Yana */
+/* Input ve Buton Yan Yana olsun diye */
 .input-wrapper {
   display: flex;
   height: 50px;
@@ -83,14 +83,14 @@ h2 {
 }
 
 input {
-  flex: 1; /* Kalan tüm alanı kapla */
+  flex: 1; /* Kalan tüm alanı kaplasın diye */
   padding: 0 15px;
   font-size: 16px;
   border: 1px solid #ccc;
   outline: none;
 }
 
-/* Hata durumunda input kenarı kırmızı olsun */
+/* Hata durumunda input kenarı kırmızı olsun diye */
 input.input-error {
   border: 1px solid #d1245e;
   color: #d1245e;
@@ -102,7 +102,7 @@ input.input-error {
 }
 
 .ok-btn {
-  background-color: #666; /* Görseldeki gri tonu */
+  background-color: #666; 
   color: white;
   border: none;
   width: 60px;

@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-// Hangi seçeneğin seçildiğini tutan değişken (Evet veya Hayır)
+// Hangi seçeneğin seçildiğini tutan değişken 
 const loyaltyStatus = ref(null) 
 </script>
 
@@ -105,7 +105,7 @@ h2 {
   color: #333;
 }
 
-/* Radio Butonlar */
+/* Radio Butonlarım */
 .radio-group {
   display: flex;
   gap: 30px;
@@ -127,10 +127,10 @@ h2 {
   cursor: pointer;
 }
 
-/* Yasal Metinler (Standard Stil) */
+ü
 .info-text {
   font-size: 13px;
-  color: #999; /* Görseldeki gri tonu */
+  color: #999; 
   line-height: 1.5;
   margin-bottom: 15px;
 }

@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 
-// --- RESİMLERİ BİLGİSAYARINDAN ÇAĞIRIYORUZ ---
 import img1 from '@/assets/trend-1.png'
 import img2 from '@/assets/trend-2.png'
 import img3 from '@/assets/trend-3.png'
@@ -11,14 +10,14 @@ import img6 from '@/assets/trend-6.png'
 import img7 from '@/assets/trend-7.png'
 import img8 from '@/assets/trend-8.png'
 
-// Ürün Listesi (Görseldeki verilerle dolduruldu)
+// Ürün Listesi 
 const products = [
   {
     id: 1,
     image: img6,
     brand: 'THE ORDINARY',
     name: 'Hyaluronic Acid 2% + B5 Derinlemesine Nemlendirici...',
-    price: '395,00', // Başlangıç fiyatı
+    price: '395,00', 
     rating: 4.5,
     reviews: 96,
     variant: '2 formatta mevcuttur',
@@ -68,10 +67,10 @@ const products = [
     variant: '2 formatta mevcuttur',
     badge: '2.Ürün -%50'
   },
-  // --- KAYDIRINCA GELECEK EKSTRA ÜRÜNLER (Şimdilik Temsili Veriler) ---
+  
   {
     id: 6,
-    image: img5, // trend-6.png
+    image: img5, 
     brand: 'SEPHORA COLLECTİON',
     name: 'Mega Mix Palette',
     price: '1.099,00',
@@ -82,7 +81,7 @@ const products = [
   },
   {
     id: 7,
-    image: img1, // trend-7.png
+    image: img1, 
     brand: 'SEPHORA COLLECTİON',
     name: 'Outrageous Plump Effect Gloss - Dolgunlaştırıcı Dudak Parlatıcısı',
     price: '899,00',
@@ -93,7 +92,7 @@ const products = [
   },
   {
     id: 8,
-    image: img7, // trend-8.png
+    image: img7, 
     brand: 'SEPHORA COLLECTİON',
     name: 'Size up - Anında XL Etkili Hacim Verici Maskara',
     price: '899,00',
@@ -104,7 +103,7 @@ const products = [
   }
 ]
 
-// Scroll (Kaydırma) İşlemleri
+// Scroll İşlemlerim
 const scrollContainer = ref(null)
 
 const scrollLeft = () => {
@@ -195,7 +194,7 @@ const scrollRight = () => {
   font-weight: 800;
 }
 
-/* --- GÜNCELLENEN BUTON STİLİ (BURASI DEĞİŞTİ) --- */
+/*  BUTON STİLİ  */
 .view-all-btn {
   background: white;
   border: 1px solid #ddd;
@@ -204,7 +203,7 @@ const scrollRight = () => {
   border-radius: 4px;
   cursor: pointer;
   font-size: 12px;
-  transition: all 0.1s ease; /* Yumuşak geçiş */
+  transition: all 0.1s ease; 
 }
 
 /* Mouse üstüne gelince */
@@ -213,12 +212,12 @@ const scrollRight = () => {
   background-color: #f9f9f9;
 }
 
-/* Tıklayınca (Basma efekti) */
+/* Tıklayınca basma efekti */
 .view-all-btn:active {
-  transform: scale(0.95); /* %5 küçültür */
+  transform: scale(0.95); 
   background-color: #e5e5e5;
 }
-/* ----------------------------------------------- */
+
 
 /* Slider Yapısı */
 .slider-container {
@@ -241,9 +240,9 @@ const scrollRight = () => {
 
 /* Ürün Kartı */
 .product-card {
-  min-width: 200px; /* Kart genişliği */
+  min-width: 200px; 
   max-width: 200px;
-  /* Sephora'da kartların çerçevesi genelde yoktur veya çok incedir, görseldekine sadık kaldım */
+  
   padding: 10px;
   position: relative;
   background: white;
@@ -344,7 +343,7 @@ const scrollRight = () => {
   margin-bottom: 15px;
 }
 
-/* Keşfet Butonu - Görseldeki gibi beyaz, siyah kenarlı */
+/* Keşfet Butonu */
 .discover-btn {
   width: 100%;
   background: white;

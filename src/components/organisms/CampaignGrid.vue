@@ -1,17 +1,17 @@
 <script setup>
-// --- 1. NORMAL RESİMLERİ IMPORT ET ---
+
 import img1 from '@/assets/kampanya-1.png'
 import img2 from '@/assets/kampanya-2.png'
 import img3 from '@/assets/kampanya-3.png'
 import img4 from '@/assets/kampanya-4.png'
 
-// --- 2. HOVER (DETAYLI) RESİMLERİ IMPORT ET ---
+
 import img1Hover from '@/assets/kampanya-1-hover.png'
 import img2Hover from '@/assets/kampanya-2-hover.png'
 import img3Hover from '@/assets/kampanya-3-hover.png'
 import img4Hover from '@/assets/kampanya-4-hover.png'
 
-// Verileri eşleştiriyoruz
+
 const campaigns = [
   { id: 1, image: img1, hoverImage: img1Hover, alt: 'Kampanya 1' },
   { id: 2, image: img2, hoverImage: img2Hover, alt: 'Kampanya 2' },
@@ -60,15 +60,15 @@ const campaigns = [
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Yan yana 2 tane */
-  gap: 30px; /* Aralarındaki boşluk */
+  gap: 30px; 
 }
 
 /* Kart Kutusu */
 .campaign-card {
-  position: relative; /* Resimlerin üst üste binmesi için şart */
+  position: relative; /* Resimlerin üst üste binmesi için  */
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 oranında dikdörtgen olması için */
+  padding-bottom: 56.25%; /*  dikdörtgen olması için */
   overflow: hidden;
   border-radius: 4px;
   cursor: pointer;
@@ -82,28 +82,28 @@ const campaigns = [
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Resmi kutuya sığdır */
-  transition: opacity 0.4s ease-in-out; /* Yumuşak geçiş efekti */
+  object-fit: cover; /* Resmi kutuya sığdırmak için */
+  transition: opacity 0.4s ease-in-out; 
 }
 
-/* Normal Resim (Varsayılan olarak görünür) */
+/* Normal Resim varsayılan olarak görünür */
 .img-normal {
   opacity: 1;
   z-index: 1;
 }
 
-/* Hover Resim (Varsayılan olarak gizli) */
+/* Hover Resim varsayılan olarak gizli */
 .img-hover {
   opacity: 0;
   z-index: 2; /* Diğerinin üstünde durmalı */
 }
 
-/* --- MOUSE İLE ÜZERİNE GELİNCE --- */
+/* mousela üzerine gelince*/
 .campaign-card:hover .img-hover {
-  opacity: 1; /* Gizli resim görünür olur */
+  opacity: 1; /* Gizli resim görünür oluyo */
 }
 
-/* Mobilde tek sütuna düşsün */
+/* Mobilde tek sütuna düşsün diye*/
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;

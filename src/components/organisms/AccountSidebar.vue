@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-// --- KARTI IMPORT ET ---
+// kartı import ettim
 import cardImg from '@/assets/card.png'
 
 // Hangi menünün seçili olduğunu tutan değişken
-// Başlangıçta 'HESABIM' seçili olsun
+// Başlangıçta 'HESABIM' seçili olsun diye ayarladım sitemde öyleydş 
 const activeItem = ref('HESABIM')
 
 const menuItems = [
@@ -20,7 +20,7 @@ const menuItems = [
   { name: 'YARDIMA MI İHTİYACINIZ VAR?', icon: 'help' }
 ]
 
-// Tıklayınca aktif elemanı değiştiren fonksiyon
+// Tıklayınca aktif elemanı değiştiren fonksiyonum
 const selectItem = (name) => {
   activeItem.value = name
 }
@@ -46,7 +46,7 @@ const selectItem = (name) => {
         @click="selectItem(item.name)"
       >
         <div v-if="activeItem === item.name" class="active-border"></div>
-
+        // burda resimleri png olarak kullanmadığım için hazır yaptırdığım iconlarım 
         <div class="icon-box" :class="{ 'red-icon': activeItem === item.name }">
           <svg v-if="item.icon === 'user'" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           <svg v-if="item.icon === 'card'" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
@@ -70,14 +70,15 @@ const selectItem = (name) => {
   </div>
 </template>
 
+
 <style scoped>
 .sidebar-container {
   width: 350px;
-  background-color: white; /* BEYAZ ARKA PLAN ZORUNLU */
+  background-color: white; 
   padding: 30px 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border: 1px solid #eee;
-  color: black; /* Yazılar siyah */
+  color: black; 
 }
 
 /* Header */
@@ -86,14 +87,14 @@ const selectItem = (name) => {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  background-color: white; /* Header da beyaz olsun */
+  background-color: white; 
 }
 
 .welcome-text {
   font-size: 18px;
   font-weight: 800;
   margin: 0;
-  color: black; /* Siyah Yazı */
+  color: black; 
   letter-spacing: -0.5px;
   text-transform: uppercase;
 }
@@ -127,21 +128,21 @@ const selectItem = (name) => {
   padding: 16px 0;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s; /* Hafif geçiş */
+  transition: background-color 0.2s; 
 }
 
-/* Fare ile üzerine gelince hafif gri olsun (İsteğe bağlı) */
+/* Fare ile üzerine gelince hafif gri olsuN diye */
 .menu-item:hover {
   background-color: #fafafa;
 }
 
-/* --- AKTİF ELEMAN STİLLERİ --- */
+/* aktif elemanım için*/
 .active-border {
   position: absolute;
   left: -20px;
   height: 24px;
   width: 4px;
-  background-color: #d1245e; /* Sephora Pembesi */
+  background-color: #d1245e; 
 }
 
 .icon-box {
@@ -153,7 +154,7 @@ const selectItem = (name) => {
 }
 
 .red-icon {
-  color: #d1245e; /* İkon pembe olsun */
+  color: #d1245e; 
 }
 
 .menu-text {
@@ -163,7 +164,7 @@ const selectItem = (name) => {
   text-transform: uppercase;
 }
 
-/* Aktif olan yazının rengi de pembe olsun */
+/* Aktif olan yazının rengi pembe olsun diye */
 .active-item .menu-text {
   color: #d1245e;
 }
@@ -173,7 +174,7 @@ const selectItem = (name) => {
   font-weight: bold;
 }
 
-/* Çıkış Yap Butonu */
+/* Çıkış Yap Butonum */
 .logout-btn {
   width: 100%;
   padding: 15px;
