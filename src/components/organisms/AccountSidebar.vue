@@ -46,7 +46,7 @@ const selectItem = (name) => {
         @click="selectItem(item.name)"
       >
         <div v-if="activeItem === item.name" class="active-border"></div>
-        // burda resimleri png olarak kullanmadığım için hazır yaptırdığım iconlarım 
+        
         <div class="icon-box" :class="{ 'red-icon': activeItem === item.name }">
           <svg v-if="item.icon === 'user'" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           <svg v-if="item.icon === 'card'" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.5" fill="none"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
